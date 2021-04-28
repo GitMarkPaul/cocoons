@@ -175,6 +175,7 @@ header {
 }
 
 .navbar .navbar-toggler {
+  padding: 0;
   display: none;
 }
 
@@ -794,6 +795,10 @@ footer .footer-bottom .footer-bottom-text {
   }
   header .navbar .navbar-menu .navbar-items .navbar-brand {
     display: block;
+  }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .home-banner-section .container .banner-heading {
     width: 100%;
