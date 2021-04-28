@@ -1,9 +1,10 @@
 h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-ostd);
     font-weight: 400;
 }
 
 p, span, label, a {
-    font-family: var(--font-gotham-light);
+    font-family: var(--font-karla);
     font-size: 16px;
     color: var(--color-black);
 }

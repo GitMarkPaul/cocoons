@@ -1,26 +1,34 @@
 // Variables
 :root {
     --color-primary: #108AC9;
+    --color-light: #eeeeee;
     --color-white: #ffffff;
     --color-black: #01222b;
     --color-info: #34B4F5;
     --color-dark-khaki: #C49A5E;
-    --font-gotham: 'Gotham Medium', sans-serif;
-    --font-gotham-light: 'Gotham Light', sans-serif;
+    --font-karla: 'Karla', sans-serif;
+    --font-karla-bold: 'Karla Bold', sans-serif;
+    --font-ostd: 'OSTD', sans-serif;
     --box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 0.2);
     --card-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-// Font Body
-@font-face {
-    font-family: 'Gotham Medium';
-    src: url('../../fonts/Gotham-Font/GothamMedium.ttf');
-    font-style: normal;
+// Body Font
+@font-face { font-family: 'Karla';
+    src: url("../fonts/Karla/Karla-Regular.ttf");
+    font-weight: 400;
+    font-style: normal; 
 }
 
-@font-face {
-    font-family: 'Gotham Light';
-    src: url('../../fonts/Gotham-Font/GothamLight.ttf');
+@font-face { font-family: 'Karla Bold';
+    src: url("../fonts/Karla/Karla-Bold.ttf");
+    font-weight: 700;
+    font-style: normal; 
+}
+
+// Heading Font
+@font-face { font-family: 'OSTD';
+    src: url("../fonts/Optima/OSTD.otf");
     font-weight: 400;
-    font-style: normal;
+    font-style: normal; 
 }
