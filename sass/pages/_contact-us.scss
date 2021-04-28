@@ -1,0 +1,31 @@
+.contact-section-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+.contact-section-info {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-bottom: 40px;
+    margin-left: 40px;
+
+    .contact-info-details {
+        margin-left: 20px;
+    }
+
+    .contact-social-media {
+        display: flex;
+        margin-left: 20px;
+
+        li {
+            margin-right: 20px;
+
+            a {
+                color: var(--color-primary);
+            }
+        }
+    }
+
+}

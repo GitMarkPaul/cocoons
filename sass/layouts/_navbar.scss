@@ -1,0 +1,45 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navbar-brand {
+        img {
+            width: 200px;
+        }
+    }
+
+    .navbar-toggler {
+        display: none;
+        
+        ion-icon {
+            font-size: 45px;
+        }
+    }
+
+    .navbar-menu {
+        display: inline-flex;
+        align-items: center;
+
+        .navbar-items {
+            margin-left: 45px;
+
+            .navbar-brand {
+                display: none;
+            }
+
+            a {
+                font-family: var(--font-gotham);
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+
+            .active {
+                font-family: var(--font-gotham);
+                padding: 12px 0;
+                width: auto;
+                border-bottom: 3px solid var(--color-primary);
+            }
+        }
+    }
+}

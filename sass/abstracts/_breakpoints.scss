@@ -1,0 +1,222 @@
+// Desktop
+@media only screen and (max-width: 1200px) {
+    header {
+        .navbar {
+            .navbar-brand {
+                img {
+                    width: 185px;
+                }
+            }
+            .navbar-menu {
+                .navbar-items {
+                    margin-left: 30px;
+                    a {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Ipad
+@media only screen and (max-width: 768px) {
+    header {
+        .navbar {
+            .navbar-toggler {
+                display: block;
+            }
+            .navbar-menu {
+                position: fixed;
+                top: 0;
+                left: 0;
+                background: var(--color-white);
+                height: 100vh;
+                width: 300px;
+                z-index: 999;
+                display: none;
+                -webkit-animation: slide-in-left 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                    animation: slide-in-left 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+                .navbar-items {
+                    margin: 30px 0;
+
+                    .navbar-brand {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    // Home Banner Section
+    .home-banner-section {
+        .container {
+            .banner-heading {
+                width: 73%;
+
+                .banner-title {
+                    font-size: 60px;
+                }
+
+                .banner-bottom-text {
+                    font-size: 14px;
+                }
+            }
+
+            .banner-text-content {
+                width: 73%;
+            }
+
+        }
+    }
+
+    // Inner Page Section
+    .inner-page-section {
+        .container {
+            .inner-page-heading {
+                .inner-page-title {
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+
+    // Contact Us Page
+    .contact-section-title {
+        margin-left: 0;
+    }
+    
+    .contact-section-info {
+        margin-left: 0;
+    }
+}
+
+// Mobile 
+@media only screen and (max-width: 576px) {
+    header {
+        .navbar {
+            .navbar-toggler {
+                display: block;
+            }
+            .navbar-menu {
+                position: fixed;
+                top: 0;
+                left: 0;
+                background: var(--color-white);
+                height: 100vh;
+                width: 300px;
+                z-index: 999;
+                display: none;
+                -webkit-animation: slide-in-left 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                    animation: slide-in-left 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+                .navbar-items {
+                    margin: 30px 0;
+
+                    .navbar-brand {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    // Home Banner Section
+    .home-banner-section {
+        .container {
+            .banner-heading {
+                width: 100%;
+
+                .banner-title {
+                    font-size: 45px;
+                }
+
+                .banner-bottom-text {
+                    font-size: 13px;
+                }
+            }
+
+            .banner-text-content {
+                width: 100%;
+            }
+
+        }
+    }
+
+    // Inner Page Section
+    .inner-page-section {
+        .container {
+            .inner-page-heading {
+                width: 100%;
+
+                .inner-page-title {
+                    font-size: 40px;
+                }
+
+                .inner-page-bottom-text {
+                    font-size: 16px;
+                }
+            }
+
+            .inner-page-text-content {
+                width: 100%;
+            }
+
+        }
+    }
+
+    section {
+        .section-headers {
+            .section-upper-text {
+                font-size: 16px;
+            }
+    
+            .section-title {
+                font-size: 30px;
+            }
+    
+            .section-bottom-text {
+                font-size: 14px;
+            }
+        }
+    }
+
+    // Call to Action
+    .cta-section {
+        .cta-content {
+            .cta-title {
+                font-size: 30px;
+            }
+        }
+    }
+
+    // Cards
+    .card {
+        .card-body {
+            padding: 20px;
+
+            .promo-logo {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin-bottom: 16px;
+            }
+
+            .promo-btn {
+                position: relative;
+                right: auto;
+                bottom: auto;
+            }
+        }
+    }
+
+    // Contact Us Page
+    .contact-section-title {
+        margin-left: 0;
+    }
+    
+    .contact-section-info {
+        margin-left: 0;
+    }
+}
