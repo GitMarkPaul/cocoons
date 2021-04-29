@@ -279,6 +279,12 @@
                 border-radius: 50%;
                 font-size: 20px;
                 border: 1px solid var(--color-primary);
+
+                &:hover {
+                    background-color: var(--color-primary);
+                    color: var(--color-white);
+                    transition: .3s ease-in-out;
+                }
             }
         }
     }

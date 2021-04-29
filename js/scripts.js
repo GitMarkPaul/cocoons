@@ -1,9 +1,9 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     // Declarations
-    let body = document.getElementsByTagName('body')[0]
-    let navbarToggle = document.getElementById('navbarToggle')
-    let openDrawer = document.getElementById('sidebarDrawer')
+    let body = document.querySelector('.preload');
+    let nav = document.querySelector(".navbar");
+    let navMenu = document.querySelector(".navbar-menu");
     let headerElement = document.getElementById('header')
     window.onscroll = () => { stickyHeader() };
 
@@ -16,16 +16,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Navbar
-    navbarToggle.addEventListener('click', () => {
-        if (openDrawer.style.display === "none") {
-            openDrawer.style.display = "block"
-            body.classList.add('disabled-bodyscroll')
-        } else {
-            openDrawer.style.display = "none"
-            body.classList.remove('disabled-bodyscroll')
-        }
-    })
+    window.addEventListener("load", () => {
+        document.body.classList.remove("preload");
+    });
+
+    document.querySelector('.sidebar-toggler').addEventListener("click", () => {
+        nav.classList.add("nav-open");
+        navMenu.style.display = 'block';
+        body.classList.add('disabled-bodyscroll');
+    });
+
+    document.querySelector(".nav-overlay").addEventListener("click", () => {
+        nav.classList.remove("nav-open");
+        navMenu.style.display = 'none';
+        body.classList.remove('disabled-bodyscroll');
+    });
 
     // AOS Initialized
     AOS.init();

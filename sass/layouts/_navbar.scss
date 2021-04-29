@@ -45,6 +45,31 @@
     }
 }
 
+.preload * {
+    transition: none !important;
+}
+
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-primary);
+    visibility: hidden;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.nav-open {
+    .nav-overlay {
+        visibility: visible;
+        opacity: 0.6;
+    }
+} 
+
 .header-fixed {
     position: fixed;
     -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

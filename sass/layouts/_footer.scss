@@ -28,6 +28,12 @@ footer {
                 background-color: #26A0DE;
                 color: var(--color-white);
                 font-size: 20px;
+
+                &:hover {
+                    background-color: var(--color-white);
+                    color: var(--color-primary);
+                    transition: .3s ease-in-out;
+                }
             }
         }
     }
