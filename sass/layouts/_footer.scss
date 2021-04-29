@@ -83,6 +83,10 @@ footer {
         margin-top: 35px;
         .footer-bottom-text {
             color: var(--color-white);
+
+            #year {
+                color: var(--color-white);
+            }
         }
     }
 }

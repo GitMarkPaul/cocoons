@@ -1,11 +1,12 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     // Declarations
-    let body = document.querySelector('.preload');
-    let nav = document.querySelector(".navbar");
-    let navMenu = document.querySelector(".navbar-menu");
+    let body = document.querySelector('.preload')
+    let nav = document.querySelector(".navbar")
+    let navMenu = document.querySelector(".navbar-menu")
     let headerElement = document.getElementById('header')
-    window.onscroll = () => { stickyHeader() };
+    window.onscroll = () => { stickyHeader() }
+    document.getElementById("year").innerHTML = new Date().getFullYear()
 
     // Header Fixed
     function stickyHeader() {
@@ -16,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    // Sidebar Drawer
     window.addEventListener("load", () => {
         document.body.classList.remove("preload");
     });
