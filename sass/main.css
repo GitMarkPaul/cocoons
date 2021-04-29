@@ -177,6 +177,13 @@ h6 {
   height: 100%;
 }
 
+.container {
+  position: static;
+  max-width: 1140px;
+  padding: 0px 30px;
+  margin: 0 auto;
+}
+
 header {
   position: relative;
   width: 100%;
@@ -352,6 +359,15 @@ footer .footer-menu .footer-contacts a {
 }
 
 footer .footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-top: 1px solid #34B4F5;
   padding: 30px 0 0 0;
   margin-top: 35px;
@@ -669,6 +685,54 @@ footer .footer-bottom .footer-bottom-text {
   border: 1px solid var(--color-primary);
 }
 
+.location-content-wrapper .location-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 35px;
+}
+
+.location-content-wrapper .location-heading img {
+  margin-right: 14px;
+}
+
+.location-content-wrapper .location-heading .location-heading-title {
+  font-size: 30px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-top: 10px;
+}
+
+.location-content-wrapper .location-card {
+  margin-top: -150px;
+  background-color: var(--color-white);
+}
+
+.location-content-wrapper .location-card .location-body {
+  padding: 35px;
+}
+
+.location-content-wrapper .location-card .location-body .location-card-title {
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+.location-content-wrapper .location-details {
+  padding: 0;
+  margin-top: 24px;
+}
+
+.location-content-wrapper .location-details li {
+  margin-bottom: 12px;
+}
+
 .promo-logo {
   position: absolute;
   top: 30px;
@@ -725,6 +789,10 @@ footer .footer-bottom .footer-bottom-text {
 
 .contact-section-info .contact-social-media li a {
   color: var(--color-primary);
+}
+
+.fancybox-container .fancybox-inner .fancybox-infobar span {
+  color: var(--color-white);
 }
 
 /**
@@ -798,6 +866,15 @@ footer .footer-bottom .footer-bottom-text {
   }
   header .navbar .navbar-menu .navbar-items a {
     font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  header .navbar .navbar-menu .navbar-items {
+    margin-left: 20px;
+  }
+  header .navbar .navbar-menu .navbar-items a {
+    font-size: 12px;
   }
 }
 
@@ -922,11 +999,39 @@ footer .footer-bottom .footer-bottom-text {
     right: auto;
     bottom: auto;
   }
+  .location-content-wrapper .location-heading {
+    margin-bottom: 20px;
+  }
+  .location-content-wrapper .location-heading img {
+    width: 20px;
+  }
+  .location-content-wrapper .location-heading .location-heading-title {
+    font-size: 24px;
+  }
+  .location-content-wrapper .location-card {
+    margin-top: 0;
+  }
+  .location-content-wrapper .location-card .location-body {
+    padding: 25px;
+  }
+  .location-content-wrapper .location-card .location-body .location-card-title {
+    font-size: 24px;
+    margin-bottom: 26px;
+  }
   .contact-section-title {
     margin-left: 0;
   }
   .contact-section-info {
     margin-left: 0;
+  }
+  footer .footer-bottom {
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+  }
+  footer .footer-bottom img {
+    margin-top: 16px;
   }
 }
 /*# sourceMappingURL=main.css.map */

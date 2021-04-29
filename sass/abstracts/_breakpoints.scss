@@ -19,6 +19,23 @@
     }
 }
 
+// Desktop View in Mobile Browser
+@media only screen and (max-width: 992px) {
+    header {
+        .navbar {
+            .navbar-menu {
+                .navbar-items {
+                    margin-left: 20px;
+
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 // Ipad
 @media only screen and (max-width: 768px) {
     header {
@@ -216,6 +233,32 @@
         }
     }
 
+    // Locations Page
+    .location-content-wrapper {
+        .location-heading {
+            margin-bottom: 20px;
+
+            img {
+                width: 20px;
+            }
+    
+            .location-heading-title {
+                font-size: 24px;
+            }
+        }
+    
+        .location-card {
+            margin-top: 0;
+            .location-body {
+                padding: 25px;
+                .location-card-title {
+                    font-size: 24px;
+                    margin-bottom: 26px;
+                }
+            }
+        }
+    }
+
     // Contact Us Page
     .contact-section-title {
         margin-left: 0;
@@ -223,5 +266,17 @@
     
     .contact-section-info {
         margin-left: 0;
+    }
+
+    footer {
+        .footer-bottom {
+            display: grid;
+            justify-items: center;
+            text-align: center;
+
+            img {
+                margin-top: 16px;
+            }
+        }
     }
 }

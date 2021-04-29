@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Fancy Box -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <!-- Global Styles -->
-    <link rel="stylesheet" href="sass/main.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <!-- Start: Header -->
@@ -85,22 +87,22 @@
 
                 <div class="row row-cols-xl-4 row-cols-lg-4 row-cols-md-3 row-cols-2 g-4 mt-5" id="gallery">
                     <div class="col" data-aos="fade-up" data-aos-duration="500">
-                        <a href="#" data-src="img/gallery/gallery-1.jpg">
+                        <a href="img/gallery/gallery-1.jpg" data-fancybox="gallery">
                             <img src="img/gallery/gallery-1.jpg" class="img-responsive w-100" alt="">
                         </a>
                     </div>
                     <div class="col" data-aos="fade-up" data-aos-duration="1000">
-                        <a href="img/gallery/gallery-2.jpg">
+                        <a href="img/gallery/gallery-2.jpg" data-fancybox="gallery">
                             <img src="img/gallery/gallery-2.jpg" class="img-responsive w-100" alt="">
                         </a>
                     </div>
                     <div class="col" data-aos="fade-up" data-aos-duration="1500">
-                        <a href="img/gallery/gallery-3.jpg">
+                        <a href="img/gallery/gallery-3.jpg" data-fancybox="gallery">
                             <img src="img/gallery/gallery-3.jpg" class="img-responsive w-100" alt="">
                         </a>
                     </div>
                     <div class="col" data-aos="fade-up" data-aos-duration="2000">
-                        <a href="img/gallery/gallery-4.jpg">
+                        <a href="img/gallery/gallery-4.jpg" data-fancybox="gallery">
                             <img src="img/gallery/gallery-4.jpg" class="img-responsive w-100" alt="">
                         </a>
                     </div>
@@ -194,6 +196,7 @@
             </div>
             <div class="footer-bottom">
                 <span class="footer-bottom-text">Copyright &copy; 2021 Cocoons. All rights reserved. Powered by Synthesisgroup</span>
+                <img src="img/millennial-resorts-logo-white.png" class="img-responsive" alt="">
             </div>
         </div>
     </footer>
@@ -209,6 +212,8 @@
     <!-- Ionic Modules -->
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <!-- Fancy Box -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
